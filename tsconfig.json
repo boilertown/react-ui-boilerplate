@@ -1,14 +1,31 @@
 {
-	"extends": "./tsconfig.base.json",
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
 			"*": ["src/*"]
 		},
+		"target": "es6",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"jsx": "react-jsx",
+		"sourceMap": true,
+		"strict": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"removeComments": false,
+		"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"noUnusedLocals": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"esModuleInterop": true,
+		"useDefineForClassFields": true,
 		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"skipLibCheck": true,
 		"declaration": true,
 		"isolatedModules": true
 	},
-	"include": ["src/**/*", "jest-setup.ts"],
-	"exclude": ["node_modules", "build"]
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
 }
