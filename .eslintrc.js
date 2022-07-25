@@ -54,5 +54,7 @@ module.exports = {
 		'react-hooks/exhaustive-deps': 'warn',
 		'jsx-a11y/no-noninteractive-element-to-interactive-role': 'warn',
 		'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
+		'@typescript-eslint/no-explicit-any': 'off',
+		'@typescript-eslint/ban-ts-comment': 'off',
 	},
 };

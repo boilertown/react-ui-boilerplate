@@ -1,0 +1,18 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"plugins": [
+			{
+				"transform": "@zerollup/ts-transform-paths"
+			}
+		]
+	},
+	"include": ["src/**/*"],
+	"exclude": [
+		"node_modules",
+		"jest-setup.ts",
+		"src/**/__stories__",
+		"src/**/__tests__",
+		"src/mdx.d.ts"
+	]
+}
