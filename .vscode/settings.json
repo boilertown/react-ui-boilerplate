@@ -19,6 +19,9 @@
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"[mdx]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"typescript.suggest.autoImports": true,
 	"typescript.tsdk": "node_modules/typescript/lib"
 }
