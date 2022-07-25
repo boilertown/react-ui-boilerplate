@@ -31,8 +31,9 @@ module.exports = {
 		'@storybook/addon-essentials',
 		'@storybook/addon-a11y',
 	],
-	staticDirs: ['./public'],
 	features: {
 		storyStoreV7: false,
 	},
+	// https://storybook.js.org/docs/react/configure/images-and-assets#serving-static-files-via-storybook-configuration
+	// staticDirs: ['./public'],
 };
