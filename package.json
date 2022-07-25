@@ -1,7 +1,7 @@
 {
 	"name": "react-ui-boilerplate",
-	"private": true,
 	"version": "0.0.0",
+	"private": true,
 	"description": "React UI library boilerplate",
 	"repository": {
 		"type": "git",
@@ -20,12 +20,12 @@
 	"scripts": {
 		"build": "NODE_ENV=production rollup -c",
 		"build:storybook": "build-storybook --quiet",
+		"lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+		"prepare": "husky install",
 		"storybook": "start-storybook -p 6006 --quiet",
 		"test": "NODE_ENV=test jest",
 		"test:coverage": "NODE_ENV=test jest --coverage",
-		"test:watch": "NODE_ENV=test jest --watch",
-		"lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-		"prepare": "husky install"
+		"test:watch": "NODE_ENV=test jest --watch"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
@@ -43,8 +43,8 @@
 		"not ie 11",
 		"not op_mini all"
 	],
-	"engines": {
-		"node": ">=16"
+	"dependencies": {
+		"@babel/runtime": "^7.18.9"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.18.9",
@@ -82,7 +82,7 @@
 		"@zerollup/ts-transform-paths": "^1.7.18",
 		"add": "^2.0.6",
 		"babel-loader": "^8.2.5",
-		"eslint": "8.18.0",
+		"eslint": "8.20.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-jsx-a11y": "^6.5.1",
 		"eslint-plugin-prettier": "^4.2.1",
@@ -112,7 +112,7 @@
 		"react": "^16.8.0 || ^17 || ^18",
 		"react-dom": "^16.8.0 || ^17 || ^18"
 	},
-	"dependencies": {
-		"@babel/runtime": "^7.18.9"
+	"engines": {
+		"node": ">=16"
 	}
 }
