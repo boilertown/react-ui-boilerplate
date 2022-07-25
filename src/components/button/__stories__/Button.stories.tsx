@@ -1,24 +1,56 @@
 import { action } from '@storybook/addon-actions';
-import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from '../index';
-import MDXContent from './docs.mdx';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Button } from '../index';
+import MDXDocs from './docs.mdx';
 
+// https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
 	title: 'Components/Button',
 	component: Button,
 	parameters: {
 		docs: {
-			page: MDXContent,
+			page: MDXDocs,
 		},
 	},
-} as Meta;
+} as ComponentMeta<typeof Button>;
 
-export const Primary: Story<ButtonProps> = (args) => {
-	return <Button {...args}>Primary Action</Button>;
+/**
+ * Component Template
+ *
+ * @see https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+ */
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {
+	onClick: action('clicked'),
+	children: 'Primary Button',
 };
 
-Primary.args = {
-	theme: 'primary',
+export const Secondary = Template.bind({});
+Secondary.args = {
+	color: 'secondary',
 	onClick: action('clicked'),
-	disabled: false,
+	children: 'Secondary Button',
+};
+
+export const Success = Template.bind({});
+Success.args = {
+	color: 'success',
+	onClick: action('clicked'),
+	children: 'Success Button',
+};
+
+export const Error = Template.bind({});
+Error.args = {
+	color: 'error',
+	onClick: action('clicked'),
+	children: 'Error Button',
+};
+
+export const Warn = Template.bind({});
+Warn.args = {
+	color: 'warn',
+	onClick: action('clicked'),
+	children: 'Warn Button',
 };
