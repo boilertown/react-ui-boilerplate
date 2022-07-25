@@ -1,0 +1,18 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"*": ["src/*"]
+		},
+		"lib": ["ES2020", "DOM"],
+		"target": "es5",
+		"moduleResolution": "node",
+		"skipLibCheck": true,
+		"isolatedModules": true,
+		"useUnknownInCatchVariables": false,
+		"allowJs": false
+	},
+	"include": ["src/**/*", "jest-setup.ts"],
+	"exclude": ["node_modules", "build"]
+}
