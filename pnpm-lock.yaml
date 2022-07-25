@@ -11,6 +11,7 @@ specifiers:
   '@emotion/babel-plugin': ^11.9.2
   '@emotion/react': ^11.9.3
   '@emotion/styled': ^11.9.3
+  '@mdx-js/react': ^1.6.22
   '@rollup/plugin-babel': ^5.3.1
   '@rollup/plugin-commonjs': ^22.0.1
   '@rollup/plugin-node-resolve': ^13.3.0
@@ -79,6 +80,7 @@ devDependencies:
   '@emotion/babel-plugin': 11.9.2_@babel+core@7.18.9
   '@emotion/react': 11.9.3_szkdlbnthht4v3jvm76fn7u6na
   '@emotion/styled': 11.9.3_y2x62d5bbinncmisoeyv36jqse
+  '@mdx-js/react': 1.6.22_react@18.2.0
   '@rollup/plugin-babel': 5.3.1_palyoikx6kq4yrfoc5jsznmrdi
   '@rollup/plugin-commonjs': 22.0.1_rollup@2.77.0
   '@rollup/plugin-node-resolve': 13.3.0_rollup@2.77.0
