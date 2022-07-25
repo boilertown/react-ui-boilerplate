@@ -1,4 +1,5 @@
-import { Story } from '@storybook/addon-docs';
+import { Canvas, Meta, Source, Story } from '@storybook/addon-docs';
+import { Button } from '../index';
 
 # Button
 
@@ -7,11 +8,38 @@ It includes several predefined button styles, each serving its own semantic purp
 
 - [Primary](#primary)
 - [Secondary](#secondary)
+- [Success](#success)
+- [Error](#error)
+- [Warn](#warn)
+
+export const Template = (args) => <Button {...args} />;
 
 ### Primary
 
-<Story id="components-button--primary" />
+<Canvas>
+	<Story id="components-button--primary" />
+</Canvas>
 
 ### Secondary
 
-<Story id="components-button--primary" />
+<Canvas>
+	<Story id="components-button--secondary" />
+</Canvas>
+
+### Success
+
+<Canvas>
+	<Story id="components-button--success" />
+</Canvas>
+
+### Error
+
+<Canvas>
+	<Story id="components-button--error" />
+</Canvas>
+
+### Warn
+
+<Canvas>
+	<Story id="components-button--warn" />
+</Canvas>

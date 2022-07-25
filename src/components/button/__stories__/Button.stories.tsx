@@ -19,7 +19,15 @@ export default {
  *
  * @see https://storybook.js.org/docs/react/writing-stories/introduction#using-args
  */
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => {
+	return (
+		<>
+			<Button {...args} />
+			&nbsp;&nbsp;
+			<Button {...args} disabled />
+		</>
+	);
+};
 
 export const Primary = Template.bind({});
 Primary.args = {

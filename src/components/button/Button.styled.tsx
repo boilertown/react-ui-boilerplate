@@ -12,9 +12,8 @@ export const Button = styled.button<{ $color: Color; variant: Variant }>`
 	outline: 0;
 	border: 0;
 	cursor: pointer;
-	padding: 8px 12px;
-	font-weight: 500;
-	font-size: 16px;
+	padding: 6px 10px;
+	font-size: 0.875rem;
 	border-radius: 4px;
 	${(props) => getTheme(props.$color, props.variant)}
 
