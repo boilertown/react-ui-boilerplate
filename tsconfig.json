@@ -5,8 +5,7 @@
 		"paths": {
 			"*": ["src/*"]
 		},
-		"lib": ["ES2020", "DOM"],
-		"moduleResolution": "node",
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
 		"declaration": true,
 		"isolatedModules": true
 	},
