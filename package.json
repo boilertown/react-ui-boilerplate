@@ -25,7 +25,8 @@
 		"storybook": "start-storybook -p 6006 --quiet",
 		"test": "NODE_ENV=test jest",
 		"test:coverage": "NODE_ENV=test jest --coverage",
-		"test:watch": "NODE_ENV=test jest --watch"
+		"test:watch": "NODE_ENV=test jest --watch",
+		"release": "semantic-release"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
@@ -105,6 +106,7 @@
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-terser": "^7.0.2",
 		"rollup-plugin-typescript2": "^0.32.1",
+		"semantic-release": "^19.0.3",
 		"ts-jest": "^28.0.7",
 		"tslib": "^2.4.0",
 		"ttypescript": "^1.5.13",
