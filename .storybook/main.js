@@ -32,7 +32,7 @@ module.exports = {
 		'@storybook/addon-a11y',
 	],
 	features: {
-		storyStoreV7: true,
+		storyStoreV7: false,
 	},
 	// https://storybook.js.org/docs/react/configure/images-and-assets#serving-static-files-via-storybook-configuration
 	// staticDirs: ['./public'],
