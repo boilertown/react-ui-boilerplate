@@ -6,7 +6,7 @@ on:
     branches: [main, master]
 
 jobs:
-  ui-test:
+  release:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     steps:
@@ -20,6 +20,7 @@ jobs:
         with:
           node-version: '16'
           cache: 'pnpm'
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
