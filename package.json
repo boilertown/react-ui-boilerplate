@@ -122,5 +122,12 @@
 	},
 	"engines": {
 		"node": ">=16"
+	},
+	"release": {
+		"branches": [
+			"main",
+			"master",
+			"next"
+		]
 	}
 }
