@@ -24,8 +24,7 @@
 		"storybook": "start-storybook -p 6006 --quiet",
 		"test": "NODE_ENV=test jest",
 		"test:coverage": "NODE_ENV=test jest --coverage",
-		"test:watch": "NODE_ENV=test jest --watch",
-		"release": "semantic-release"
+		"test:watch": "NODE_ENV=test jest --watch"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [

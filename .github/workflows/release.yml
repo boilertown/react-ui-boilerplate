@@ -9,25 +9,34 @@ jobs:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+
       - uses: actions/checkout@v3
+        if: ${{ steps.release.outputs.release_created }}
 
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7.5.0
+        if: ${{ steps.release.outputs.release_created }}
 
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'pnpm'
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: Build package
         run: pnpm build
+        if: ${{ steps.release.outputs.release_created }}
 
-      - name: Create a release
-        run: pnpm release
+      - name: Publish to NPM
+        run: pnpm publish --access public
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ steps.release.outputs.release_created }}
