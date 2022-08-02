@@ -10,36 +10,32 @@ jobs:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v3
-        id: release
-        with:
-          release-type: node
-
       - uses: actions/checkout@v3
-        if: ${{ steps.release.outputs.release_created }}
+        with:
+          # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
+          fetch-depth: 0
 
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7.5.0
-        if: ${{ steps.release.outputs.release_created }}
 
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
-          registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
-        if: ${{ steps.release.outputs.release_created }}
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        if: ${{ steps.release.outputs.release_created }}
 
-      - name: Build package
+      - name: Build all packages
         run: pnpm build
-        if: ${{ steps.release.outputs.release_created }}
 
-      - name: Publish to NPM
-        run: pnpm publish --access public
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@v1
+        with:
+          publish: pnpm release
+          commit: 'ci: release packages'
+          title: 'ci: release packages'
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        if: ${{ steps.release.outputs.release_created }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
