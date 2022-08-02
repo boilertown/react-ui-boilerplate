@@ -43,7 +43,21 @@
 
 ## Development
 
-- `yarn build` build the library for publishing.
+- Build the library:
+
+  ```sh
+  pnpm build
+  ```
+
+- Run storybook in development mode:
+
+  ```sh
+  pnpm storybook
+  ```
+
+## Release and Publish
+
+This boilerplate uses [release-please-action](https://github.com/google-github-actions/release-please-action) to automated generate CHANGELOG, create Github releases and publish to NPM via GitHub Action. You can see details of action at [release.yml](/.github/workflows//release.yml) and read more about [release-please](https://github.com/googleapis/release-please).
 
 ## Contributing
 
