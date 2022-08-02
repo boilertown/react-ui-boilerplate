@@ -55,9 +55,21 @@
   pnpm storybook
   ```
 
-## Release and Publish
+- Unit test component with:
 
-This boilerplate uses [release-please-action](https://github.com/google-github-actions/release-please-action) to automated generate CHANGELOG, create Github releases and publish to NPM via GitHub Action. You can see details of action at [release.yml](/.github/workflows//release.yml) and read more about [release-please](https://github.com/googleapis/release-please).
+  ```sh
+  pnpm test
+  ```
+
+## GitHub release
+
+This boilerplate uses [release-please-action](https://github.com/google-github-actions/release-please-action) to automated generate CHANGELOG, create Github releases and publish to NPM via GitHub Actions. You can see details of action at [release.yml](/.github/workflows//release.yml) and read more about [release-please](https://github.com/googleapis/release-please).
+
+## Publish package
+
+To automating publish your library package to NPM registry, you must first create a `NPM_TOKEN`. [See this article for more details](https://docs.npmjs.com/creating-and-viewing-access-tokens). Make sure the type of access token is **Automation**.
+
+[Follow this instruction](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) to add the created token to your GitHub Actions secrets. Name of the secret is `NPM_TOKEN`.
 
 ## Contributing
 

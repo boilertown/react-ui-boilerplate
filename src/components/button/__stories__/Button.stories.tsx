@@ -1,17 +1,11 @@
 import { action } from '@storybook/addon-actions';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Button } from '../index';
-import MDXDocs from './docs.mdx';
 
 // https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
 	title: 'Components/Button',
 	component: Button,
-	parameters: {
-		docs: {
-			page: MDXDocs,
-		},
-	},
 } as ComponentMeta<typeof Button>;
 
 /**
