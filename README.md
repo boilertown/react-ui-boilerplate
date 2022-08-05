@@ -16,6 +16,7 @@
 - Linting with [Eslint][eslint-url] and code formatting with [Prettier][prettier-url]
 - Conventional commit messages with [Commitlint][commitlint-url]
 - Build the library with [Rollup][rollup-url]
+- Automated release with [changesets][changesets-url]
 
 ## Get Started
 
@@ -49,7 +50,7 @@
   pnpm build
   ```
 
-- Run storybook in development mode:
+- Run storybook:
 
   ```sh
   pnpm storybook
@@ -61,9 +62,15 @@
   pnpm test
   ```
 
+- Create changeset:
+
+  ```sh
+  pnpm changeset
+  ```
+
 ## Release & Publish package
 
-This boilerplate uses [changesets](https://github.com/changesets/changesets) to automatically generate `CHANGELOG`, create releases and publish to NPM registry via GitHub Actions. You can see action details at [release.yml](/.github/workflows//release.yml).
+This boilerplate uses [changesets][changesets-url] to automatically generate `CHANGELOG`, create releases and publish to NPM registry via GitHub Actions. You can see action details at [release.yml](/.github/workflows//release.yml).
 
 To automating publish your library, follow these steps:
 
@@ -90,3 +97,4 @@ To automating publish your library, follow these steps:
 [prettier-url]: https://prettier.io
 [testing-library-url]: https://testing-library.com
 [rollup-url]: https://rollupjs.org
+[changesets-url]: https://github.com/changesets/changesets

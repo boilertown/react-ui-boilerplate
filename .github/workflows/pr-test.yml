@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 jobs:
   unit-test:
     if: github.event.pull_request.draft == false
@@ -15,7 +18,7 @@ jobs:
 
       - uses: pnpm/action-setup@v2.2.2
         with:
-          version: 7.5.0
+          version: 7.8.0
 
       - uses: actions/setup-node@v3
         with:
