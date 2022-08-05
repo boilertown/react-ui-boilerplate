@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 jobs:
   unit-test:
     if: github.event.pull_request.draft == false
