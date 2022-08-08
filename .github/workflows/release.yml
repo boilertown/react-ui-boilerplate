@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 jobs:
   release:
     if: github.event.pull_request.draft == false
@@ -38,4 +41,3 @@ jobs:
           title: 'ci: release packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
