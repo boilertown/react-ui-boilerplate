@@ -31,12 +31,12 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build all packages
-        run: pnpm build
+        run: pnpm run build
 
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
         with:
-          publish: pnpm release
+          publish: pnpm run release
           commit: 'ci: release packages'
           title: 'ci: release packages'
         env:
