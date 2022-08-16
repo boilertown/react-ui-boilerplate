@@ -4,7 +4,7 @@
   <p>
     A React boilerplate with opinionated setup to help you quickly create your own React UI library.
   </p>
-  <img src="https://img.shields.io/github/license/boilertowns/nostalgia-boilerplate?style=flat-square" alt="MIT license" >
+  <img src="https://img.shields.io/github/license/boilertowns/react-ui-boilerplate?style=flat-square" alt="MIT license" >
 </div>
 
 ## The Setup
@@ -24,13 +24,13 @@
 
   ```sh
   # npm
-  npm init boilertowns -- -b react-ui-boilerplate
+  npm create boilertowns -- -b react-ui-boilerplate
 
   # yarn
   yarn create boilertowns -b react-ui-boilerplate
 
   # pnpm
-  pnpm dlx create-boilertowns -b react-ui-boilerplate
+  pnpm create boilertowns -b react-ui-boilerplate
 
   # bun
   bun create boilertowns/react-ui-boilerplate [library-name]
