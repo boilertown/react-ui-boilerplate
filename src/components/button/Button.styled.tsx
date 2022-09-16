@@ -7,14 +7,12 @@ export const Button = styled.button<{ $color: Color; variant: Variant }>`
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	box-sizing: border-box;
 	height: auto;
 	outline: 0;
 	border: 0;
-	cursor: pointer;
-	padding: 6px 10px;
+	padding: 0.5rem 1.5rem;
 	font-size: 0.875rem;
-	border-radius: 4px;
+	border-radius: 0.25rem;
 	${(props) => getTheme(props.$color, props.variant)}
 
 	&:disabled {
