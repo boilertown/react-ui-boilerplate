@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { SCREEN_LG, SCREEN_XM } from 'constants/breakpoints';
-import { COLUMN_WIDTH, GUTTER } from 'constants/spacing';
+import { SCREEN_LG, SCREEN_XM } from '@src/constants/breakpoints';
+import { COLUMN_WIDTH, GUTTER } from '@src/constants/spacing';
 
 export const FluidContainer = styled.div`
 	margin-left: auto;

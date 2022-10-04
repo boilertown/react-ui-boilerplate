@@ -14,7 +14,6 @@ module.exports = {
 	importOrderSortSpecifiers: true,
 	importOrderCaseInsensitive: true,
 	importOrder: [
-		'^@src/(.*)$',
 		'^@src/components/(.*)$',
 		'^@src/hooks/(.*)$',
 		'^@src/utils/(.*)$',
