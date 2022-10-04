@@ -4,7 +4,10 @@ module.exports = {
 	testEnvironment: 'jsdom',
 	collectCoverageFrom: ['<rootDir>/src/**/*.{ts,tsx,js,jsx}'],
 	modulePaths: ['<rootDir>/src'],
-	modulePathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/build/'],
+	moduleNameMapper: {
+		'@src/(.*)': '<rootDir>/src/$1',
+	},
+	modulePathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/dist/'],
 	setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
 	testMatch: [
 		'<rootDir>/src/**/__tests__/**/*.[jt]s?(x)',

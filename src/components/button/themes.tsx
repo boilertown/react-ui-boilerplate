@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { rgba } from 'utils/rgba';
+import { rgba } from '@src/utils/rgba';
 import {
 	ERROR,
 	PRIMARY,
@@ -7,7 +7,7 @@ import {
 	SUCCESS,
 	WARN,
 	WHITE,
-} from 'constants/colors';
+} from '@src/constants/colors';
 import type { Color, Variant } from './Button';
 
 function getColorScheme(color: Color) {

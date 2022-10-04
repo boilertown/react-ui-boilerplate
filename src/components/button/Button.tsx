@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { classNames } from 'utils/classNames';
+import { classNames } from '@src/utils/classNames';
 import * as Sc from './Button.styled';
 
 export type Color = 'primary' | 'secondary' | 'success' | 'error' | 'warn';

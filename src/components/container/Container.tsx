@@ -1,4 +1,4 @@
-import { classNames } from 'utils/classNames';
+import { classNames } from '@src/utils/classNames';
 import * as Sc from './Container.styled';
 
 export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
