@@ -1,9 +1,15 @@
+const path = require('path');
+
 module.exports = {
 	core: {
 		builder: 'webpack5',
 	},
 	webpackFinal: async (config) => {
 		config.stats = 'errors-only';
+		config.resolve.alias = {
+			...config.resolve.alias,
+			'@src': path.resolve(__dirname, '../src/'),
+		};
 		config.resolve.modules.push('src');
 		return config;
 	},
