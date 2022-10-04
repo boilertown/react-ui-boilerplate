@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"*": ["src/*"]
+			"@src/*": ["src/*"]
 		},
 		"target": "es6",
 		"module": "esnext",
@@ -10,8 +10,6 @@
 		"jsx": "react-jsx",
 		"sourceMap": true,
 		"strict": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
 		"removeComments": false,
 		"forceConsistentCasingInFileNames": true,
 		"allowSyntheticDefaultImports": true,
@@ -26,6 +24,6 @@
 		"declaration": true,
 		"isolatedModules": true
 	},
-	"include": ["src/**/*", "mdx.d.ts"],
+	"include": ["src/**/*"],
 	"exclude": ["node_modules"]
 }
