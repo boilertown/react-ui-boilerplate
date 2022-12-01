@@ -86,7 +86,7 @@
 		"@typescript-eslint/parser": "^5.41.0",
 		"@zerollup/ts-transform-paths": "^1.7.18",
 		"babel-loader": "^9.0.0",
-		"eslint": "8.26.0",
+		"eslint": "8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-jsx-a11y": "^6.5.1",
 		"eslint-plugin-prettier": "^4.2.1",
