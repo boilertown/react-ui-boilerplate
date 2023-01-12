@@ -1,10 +1,10 @@
 {
-	"name": "@boilertowns/react-ui-boilerplate",
+	"name": "@boilertown/react-ui-boilerplate",
 	"version": "0.0.0",
 	"description": "React UI library boilerplate",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/boilertowns/react-ui-boilerplate.git"
+		"url": "https://github.com/boilertown/react-ui-boilerplate.git"
 	},
 	"sideEffects": false,
 	"exports": {

@@ -1,4 +1,4 @@
-# @boilertowns/react-ui-boilerplate
+# @boilertown/react-ui-boilerplate
 
 ## 0.0.1
 

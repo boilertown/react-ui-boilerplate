@@ -4,7 +4,7 @@
   <p>
     A React boilerplate with opinionated setup to help you quickly create your own React UI library.
   </p>
-  <img src="https://img.shields.io/github/license/boilertowns/react-ui-boilerplate?style=flat-square" alt="MIT license" >
+  <img src="https://img.shields.io/github/license/boilertown/react-ui-boilerplate?style=flat-square" alt="MIT license" >
 </div>
 
 ## The Setup
@@ -20,20 +20,20 @@
 
 ## Get Started
 
-- Use [Boilertowns](https://github.com/boilertowns/create-boilertowns) CLI.
+- Use [Boilertown](https://github.com/boilertown/create-boilertown) CLI.
 
   ```sh
   # npm
-  npm create boilertowns -- -b react-ui-boilerplate
+  npm create boilertown -- -b react-ui-boilerplate
 
   # yarn
-  yarn create boilertowns -b react-ui-boilerplate
+  yarn create boilertown -b react-ui-boilerplate
 
   # pnpm
-  pnpm create boilertowns -b react-ui-boilerplate
+  pnpm create boilertown -b react-ui-boilerplate
 
   # bun
-  bun create boilertowns/react-ui-boilerplate [library-name]
+  bun create boilertown/react-ui-boilerplate [library-name]
   ```
 
 - Click the green "Use this template" button to generate a new repository with the same structure and files.
@@ -88,7 +88,7 @@ To automating publish your library, follow these steps:
 
 **react-ui-boilerplate** ❤️ your contributions. If you have any ideas, suggestions, fixes, feel free to contribute.
 
-[boilertowns-url]: https://github.com/boilertowns
+[boilertown-url]: https://github.com/boilertown
 [react-url]: https://beta.reactjs.org
 [typescript-url]: https://www.typescriptlang.org
 [storybook-url]: https://storybook.js.org
